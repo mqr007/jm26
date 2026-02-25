@@ -13,10 +13,6 @@ const startupTime = performance.now();
   logger.header();
 
   logger.info("<<<< jimeng-api >>>>");
-  logger.info("Version:", environment.package.version);
-  logger.info("Process id:", process.pid);
-  logger.info("Environment:", environment.env);
-  logger.info("Service name:", config.service.name);
 
   server.attachRoutes(routes);
   await server.listen();
